@@ -95,8 +95,9 @@ textarea {
   font-size: clamp(2.8rem, 6vw, 5rem);
   max-width: 10ch;
   text-wrap: balance;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow-wrap: break-word;
+  line-break: loose;
 }
 
 .hero-text,
@@ -310,6 +311,9 @@ textarea {
 
 .result-card h3 {
   font-size: clamp(2rem, 4vw, 3rem);
+  word-break: normal;
+  overflow-wrap: break-word;
+  line-break: loose;
 }
 
 .result-tags {
@@ -438,7 +442,9 @@ textarea {
     max-width: none;
     line-height: 1.06;
     letter-spacing: -0.01em;
+    word-break: normal;
     overflow-wrap: break-word;
+    line-break: loose;
   }
 
   .hero-text,
@@ -499,6 +505,9 @@ textarea {
   .result-empty h3 {
     font-size: clamp(1.45rem, 7vw, 2rem);
     line-height: 1.06;
+    word-break: normal;
+    overflow-wrap: break-word;
+    line-break: loose;
   }
 
   .result-tags {
@@ -536,7 +545,9 @@ textarea {
     font-size: clamp(1.85rem, 8.5vw, 2.5rem);
     max-width: none;
     line-height: 1.08;
+    word-break: normal;
     overflow-wrap: break-word;
+    line-break: loose;
   }
 
   .hero-text {
