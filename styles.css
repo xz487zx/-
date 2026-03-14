@@ -14,6 +14,10 @@
   --radius-md: 16px;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,6 +31,7 @@ body {
     radial-gradient(circle at top right, rgba(68, 85, 60, 0.16), transparent 22%),
     linear-gradient(180deg, #fff8ef 0%, var(--bg) 38%, #f4eadb 100%);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 button,
@@ -39,6 +44,7 @@ textarea {
   width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
   padding: 32px 0 48px;
+  overflow-x: clip;
 }
 
 .hero {
@@ -90,6 +96,7 @@ textarea {
   max-width: 10ch;
   text-wrap: balance;
   word-break: keep-all;
+  overflow-wrap: anywhere;
 }
 
 .hero-text,
@@ -431,6 +438,7 @@ textarea {
     max-width: none;
     line-height: 1.06;
     letter-spacing: -0.01em;
+    overflow-wrap: break-word;
   }
 
   .hero-text,
@@ -528,6 +536,7 @@ textarea {
     font-size: clamp(1.85rem, 8.5vw, 2.5rem);
     max-width: none;
     line-height: 1.08;
+    overflow-wrap: break-word;
   }
 
   .hero-text {
