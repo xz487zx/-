@@ -89,6 +89,7 @@ textarea {
   font-size: clamp(2.8rem, 6vw, 5rem);
   max-width: 10ch;
   text-wrap: balance;
+  word-break: keep-all;
 }
 
 .hero-text,
@@ -426,9 +427,10 @@ textarea {
   }
 
   .hero h1 {
-    font-size: clamp(2.2rem, 11vw, 3.25rem);
-    max-width: 8ch;
-    line-height: 0.95;
+    font-size: clamp(2rem, 9vw, 2.9rem);
+    max-width: none;
+    line-height: 1.06;
+    letter-spacing: -0.01em;
   }
 
   .hero-text,
@@ -446,6 +448,10 @@ textarea {
   .pk-actions,
   .result-actions {
     margin-top: 18px;
+  }
+
+  .hero-copy {
+    gap: 0;
   }
 
   .start-button {
@@ -483,7 +489,7 @@ textarea {
 
   .result-card h3,
   .result-empty h3 {
-    font-size: clamp(1.6rem, 8vw, 2.2rem);
+    font-size: clamp(1.45rem, 7vw, 2rem);
     line-height: 1.06;
   }
 
@@ -519,12 +525,29 @@ textarea {
   }
 
   .hero h1 {
-    font-size: clamp(2rem, 10.5vw, 2.9rem);
-    max-width: 7ch;
+    font-size: clamp(1.85rem, 8.5vw, 2.5rem);
+    max-width: none;
+    line-height: 1.08;
   }
 
   .hero-text {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
+  }
+
+  .hero-actions,
+  .pk-actions,
+  .result-actions {
+    gap: 10px;
+  }
+
+  .start-button {
+    min-height: 68px;
+    font-size: 1.25rem;
+  }
+
+  .ghost-button,
+  .primary-button {
+    font-size: 1rem;
   }
 
   .tabs {
